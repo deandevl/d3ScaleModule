@@ -1,0 +1,31 @@
+{
+  "name": "d3scalemodule",
+  "version": "1.0.0",
+  "description": "Contains functions that extends/consolidates some of the functions found under d3 library's d3-scale",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deandevl/d3ScaleModule.git"
+  },
+  "keywords": [
+    "d3",
+    "chart",
+    "scale"
+  ],
+  "author": "Rick Dean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deandevl/d3ScaleModule/issues"
+  },
+  "homepage": "https://github.com/deandevl/d3ScaleModule#readme",
+  "main": "d3ScaleModule.js",
+  "module": "index.js",
+  "dependencies": {
+    "d3-array": "^2.0.3",
+    "d3-scale": "^2.1.2",
+    "d3-time-format": "^2.1.3",
+    "d3-scale-chromatic": "^1.3.3"
+  }
+}
