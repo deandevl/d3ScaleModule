@@ -2,20 +2,21 @@
  * Created by Rick on 2019-01-15.
  */
 
-import * as d3time from 'd3-time';
+//import * as d3time from 'd3-time';
+import {timeYear,timeMonth,timeWeek,timeDay,timeHour,timeMinute,timeSecond,timeMillisecond} from 'd3-time';
 import * as d3scale from 'd3-scale';
 import {schemeCategory10} from 'd3-scale-chromatic';
 import {min,max} from 'd3-array';
 
 const time_interval = {
-  year: d3time.timeYear,
-  month: d3time.timeMonth,
-  week: d3time.timeWeek,
-  day: d3time.timeDay,
-  hour: d3time.timeHour,
-  minute: d3time.timeMinute,
-  second: d3time.timeSecond,
-  millisecond: d3time.timeMillisecond
+  year: timeYear,
+  month: timeMonth,
+  week: timeWeek,
+  day: timeDay,
+  hour: timeHour,
+  minute: timeMinute,
+  second: timeSecond,
+  millisecond: timeMillisecond
 };
 
 function linear_scale(minmax,pixels,xy,do_nice){
@@ -72,7 +73,7 @@ function time_scale(minmax,pixels,xy,do_nice){
   return scaleTime;
 }
 
-function color_scale(color_ar=d3scalechrom.schemeCategory10,keys=null){
+function color_scale(color_ar=schemeCategory10,keys=null){
   //define color scaling
   const color_scale = d3scale.scaleOrdinal(color_ar);
   //define color scaling domain other than integers
